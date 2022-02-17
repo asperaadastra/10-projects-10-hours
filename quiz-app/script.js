@@ -42,6 +42,7 @@ const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 
+
 let currentQuiz = 0;
 let score = 0;
 
@@ -64,12 +65,14 @@ function getSelected() {
 
     answerEls.forEach((answerEl) => {
         if (answerEl.checked) {
-            answer = answerEl.id;
+            answer = answerEl.id; 
         }
     });
 
     return answer;
 }
+
+
 
 function deselectAnswers() {
     answerEls.forEach((answerEl) => {
